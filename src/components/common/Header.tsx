@@ -1,4 +1,4 @@
-import type Container from "../../components/ui/Container";
+import Container from "../../components/ui/Container";
 import { Link, NavLink } from "react-router-dom";
 
 const nav = [
