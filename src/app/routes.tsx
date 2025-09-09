@@ -5,6 +5,7 @@ import MeetRahulPage from "@/pages/MeetRahul";
 import WhatIDoPage from "@/pages/WhatIDo";
 import ProjectsPage from "@/pages/Projects";
 import LetsTalkPage from "@/pages/LetsTalk";
+import NotFoundPage from "@/pages/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
       { path: "/what-i-do", element: <WhatIDoPage /> },
       { path: "/projects", element: <ProjectsPage /> },
       { path: "/lets-talk", element: <LetsTalkPage /> },
+      { path: "*", element: <NotFoundPage /> },
     ],
   },
 ]);
