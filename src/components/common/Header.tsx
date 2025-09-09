@@ -1,5 +1,6 @@
 import Container from "../../components/ui/Container";
 import { Link, NavLink } from "react-router-dom";
+import logo from "@/assets/Rahuldeb_logo.svg"
 
 const nav = [
   { to: "/", label: "Home" },
@@ -18,7 +19,7 @@ export default function Header() {
             <span className="sr-only">Rahul Deb</span>
             {/* put your signature SVG here */}
             <div className="h-7 w-auto">
-              <img className="h-7" src="/logo.svg" alt="Rahul Deb" />
+              <img className="h-7" src={logo} alt="Rahul Deb" />
             </div>
           </Link>
 
