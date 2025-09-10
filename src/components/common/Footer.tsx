@@ -1,11 +1,13 @@
 import React from "react";
 import logo from "@/assets/Rahuldeb_logo.svg";
+import Container from "../ui/Container";
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-[#202125] text-[rgba(255,255,255,0.85)] px-[8vw] pt-14 pb-5 font-sans">
+      <Container>
       {/* -------- TOP: signature + get-in-touch + social -------- */}
       <div className="grid grid-cols-1 md:grid-cols-[1.1fr_1.2fr_0.9fr] gap-7 md:gap-12 items-start">
         {/* signature / logo */}
@@ -99,7 +101,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-
       {/* -------- info strip -------- */}
       <div className="grid grid-cols-1 md:grid-cols-[1.1fr_1.2fr_0.9fr] gap-5 md:gap-12 mt-10 items-start">
         <div>
@@ -131,7 +132,6 @@ const Footer: React.FC = () => {
           <p className="text-[16px] m-0">Tripura – Bengaluru</p>
         </div>
       </div>
-
       {/* -------- bottom strip -------- */}
       <div className="border-t border-[rgba(255,255,255,0.08)] mt-7 pt-4 flex justify-between items-center flex-wrap text-[14px] text-[rgba(255,255,255,0.65)] gap-3">
         <p>© {year}, Rahul Deb. All rights reserved.</p>
@@ -145,6 +145,7 @@ const Footer: React.FC = () => {
           Rahul
         </p>
       </div>
+      </Container>
     </footer>
   );
 };
